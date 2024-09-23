@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 NavBar</title>
+    <style>
+        /* 기본 스타일 */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* 네비게이션 바 스타일 */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-sizing: border-box;
+            /* 요소의 크기를 정확하게 조정 */
+        }
+
+        /* 로고 섹션 */
+        .navbar .logo img {
+            width: 50px;
+            height: auto;
+        }
+
+        .navbar .logo span {
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 10px;
+            color: #000;
+        }
+
+        /* 메뉴 섹션 */
+        .navbar .menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .navbar .menu a {
+            text-decoration: none;
+            color: #000;
+            font-size: 18px;
+            white-space: nowrap;
+            /* 텍스트 줄바꿈 방지 */
+        }
+
+        /* 반응형 처리 */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: row;
+            }
+
+            .navbar .menu {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .navbar .menu a {
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="0924_logo1.png" alt="SMUMC 로고">
+                <span>SMUMC</span>
+            </div>
+            <div class="menu">
+                <a href="#">PROJECTS</a>
+                <a href="#">MEMBERS</a>
+                <a href="#">NOTICE</a>
+
+            </div>
+        </nav>
+    </header>
+
+</body>
+
+</html>
