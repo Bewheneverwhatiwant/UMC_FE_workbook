@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Page Layout</title>
+    <style>
+        body,
+        html {
+            min-height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            display: grid;
+            grid-template-rows: 100px 1fr 100px;
+            grid-template-columns: 1fr;
+
+        }
+
+        header {
+            background-color: #1c1e26;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 3rem;
+            color: white;
+            font-size: 24px;
+        }
+
+        .menu {
+            height: 100%;
+            width: 90rem;
+            background-color: #eb5757;
+            padding: 0 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        .hero {
+            background-color: #2d9cdb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+        }
+
+        .content {
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .main {
+            min-width: 50rem;
+            height: 100%;
+            background-color: #0e2a47;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+
+        }
+
+        .aside {
+            min-width: 40rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .image {
+            background-color: #b2d9d9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            height: 50%;
+        }
+
+        .extra {
+            background-color: #6fcf97;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            height: 50%;
+        }
+
+        footer {
+            height: 5rem;
+            background-color: #f2c94c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div>HEADER</div>
+            <div class="menu">MENU</div>
+        </header>
+        <section class="hero">HERO</section>
+        <div class="content">
+            <article class="main">MAIN</article>
+            <div class="aside">
+                <div class="image">IMAGE</div>
+                <div class="extra">EXTRA</div>
+            </div>
+        </div>
+        <footer>BANNER</footer>
+    </div>
+</body>
+
+</html>
